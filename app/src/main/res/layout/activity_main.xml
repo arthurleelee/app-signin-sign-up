@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2_1"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:drawableRight="@drawable/ball"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text="我想打"
+            android:textSize="40sp" />
+
+
+        <SearchView
+            android:id="@+id/SearchViewinfo"
+            android:layout_width="161dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/main_sv"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:iconifiedByDefault="false"
+            android:inputType="text"
+            android:orientation="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:persistentDrawingCache="scrolling|none"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="球場" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="433dp">
+
+        <TextView
+            android:id="@+id/textView2_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="DATA"
+            android:textColor="@color/colorblack"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.501" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2_22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="這邊是介面切換(未完成~)"
+            android:textColor="@color/colorblack"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
